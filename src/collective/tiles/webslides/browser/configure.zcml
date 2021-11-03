@@ -1,0 +1,66 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.tiles.webslides">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  
+  <!-- Include our dependencies -->
+  <include package="plone.tiles" />
+  <include package="plone.app.tiles" />
+
+  <browser:jbot
+      directory="overrides"
+      layer="collective.tiles.webslides.interfaces.ICollectiveTilesWebSlidesLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="collective.tiles.webslides"
+      type="plone"
+      directory="static"
+      />
+
+    <plone:tile
+        name="collective.tiles.webslides.sidetextslide"
+        title="WebSlides - Side Text Slide"
+        for="*"
+        add_permission="cmf.ModifyPortalContent"
+        permission="zope2.View"
+        class=".webslides.SideTextSlideTile"
+        schema=".webslides.ISideTextSlideTile"
+    />
+
+    <plone:tile
+        name="collective.tiles.webslides.videoslide"
+        title="WebSlides - Video Slide"
+        for="*"
+        add_permission="cmf.ModifyPortalContent"
+        permission="zope2.View"
+        class=".webslides.VideoSlideTile"
+        schema=".webslides.IVideoSlideTile"
+    />
+
+    <plone:tile
+        name="collective.tiles.webslides.fullscreenslide"
+        title="WebSlides - Fullscreen Slide"
+        for="*"
+        add_permission="cmf.ModifyPortalContent"
+        permission="zope2.View"
+        class=".fullscreen.FullscreenSlideTile"
+        schema=".fullscreen.IFullscreenSlideTile"
+    />
+
+    <plone:tile
+        name="collective.tiles.webslides.textslide"
+        title="WebSlides - Text Slide"
+        for="*"
+        add_permission="cmf.ModifyPortalContent"
+        permission="zope2.View"
+        class=".textslide.TextSlideTile"
+        schema=".textslide.ITextSlideTile"
+    />
+
+</configure>

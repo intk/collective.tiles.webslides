@@ -2,6 +2,6 @@
 <layers>
   <layer
       name="collective.tiles.webslides"
-      interface="collective.tiles.webslides.interfaces.ICollectiveTilesStorytellingLayer"
+      interface="collective.tiles.webslides.interfaces.ICollectiveTilesWebSlidesLayer"
       />
 </layers>

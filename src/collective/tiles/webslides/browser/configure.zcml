@@ -13,7 +13,7 @@
 
   <browser:jbot
       directory="overrides"
-      layer="collective.tiles.webslides.interfaces.ICollectiveTilesStorytellingLayer"
+      layer="collective.tiles.webslides.interfaces.ICollectiveTilesWebSlidesLayer"
       />
 
   <!-- Publish static files -->
@@ -29,8 +29,8 @@
         for="*"
         add_permission="cmf.ModifyPortalContent"
         permission="zope2.View"
-        class=".storytelling.SideTextSlideTile"
-        schema=".storytelling.ISideTextSlideTile"
+        class=".webslides.SideTextSlideTile"
+        schema=".webslides.ISideTextSlideTile"
     />
 
     <plone:tile
@@ -39,8 +39,8 @@
         for="*"
         add_permission="cmf.ModifyPortalContent"
         permission="zope2.View"
-        class=".storytelling.VideoSlideTile"
-        schema=".storytelling.IVideoSlideTile"
+        class=".webslides.VideoSlideTile"
+        schema=".webslides.IVideoSlideTile"
     />
 
     <plone:tile

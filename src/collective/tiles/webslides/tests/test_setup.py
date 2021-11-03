@@ -33,12 +33,12 @@ class TestSetup(unittest.TestCase):
             'collective.tiles.webslides'))
 
     def test_browserlayer(self):
-        """Test that ICollectiveTilesStorytellingLayer is registered."""
+        """Test that ICollectiveTilesWebSlidesLayer is registered."""
         from collective.tiles.webslides.interfaces import (
-            ICollectiveTilesStorytellingLayer)
+            ICollectiveTilesWebSlidesLayer)
         from plone.browserlayer import utils
         self.assertIn(
-            ICollectiveTilesStorytellingLayer,
+            ICollectiveTilesWebSlidesLayer,
             utils.registered_layers())
 
 
@@ -63,10 +63,10 @@ class TestUninstall(unittest.TestCase):
             'collective.tiles.webslides'))
 
     def test_browserlayer_removed(self):
-        """Test that ICollectiveTilesStorytellingLayer is removed."""
+        """Test that ICollectiveTilesWebSlidesLayer is removed."""
         from collective.tiles.webslides.interfaces import \
-            ICollectiveTilesStorytellingLayer
+            ICollectiveTilesWebSlidesLayer
         from plone.browserlayer import utils
         self.assertNotIn(
-            ICollectiveTilesStorytellingLayer,
+            ICollectiveTilesWebSlidesLayer,
             utils.registered_layers())

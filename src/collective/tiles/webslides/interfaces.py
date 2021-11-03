@@ -4,5 +4,5 @@
 from zope.interface import Interface
 from zope.publisher.interfaces.browser import IDefaultBrowserLayer
 
-class ICollectiveTilesStorytellingLayer(IDefaultBrowserLayer):
+class ICollectiveTilesWebSlidesLayer(IDefaultBrowserLayer):
     """Marker interface that defines a browser layer."""

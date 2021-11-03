@@ -6,12 +6,14 @@
       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
       i18n:domain="plone">
 <body>
-    <div class="text-slide row">
-        <div class="text-slide-wrapper col-xs-12">
-            <div class="text-slide-body" uk-parallax="y: -100">
-                <div tal:replace="structure view/body/output" />
+    
+    <section class="slide aligncenter">
+        <div class="wrap">
+            <div class="content-center">
+                div tal:replace="structure view/body/output" />
             </div>
         </div>
-    </div>
+    </section>
+
 </body>
 </html>

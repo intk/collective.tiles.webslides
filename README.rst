@@ -12,7 +12,13 @@ Features
 --------
 
 - Uses the same interface as the rich text tile. 
-- Contains three tiles: Side text slide, Fullscreen slide, Text slide
+- Contains two tiles: Side text slide, Text slide
+
+Todo's
+--------
+
+- Fullscreen slide
+- Video slide
 
 Translations
 ------------

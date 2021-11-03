@@ -7,10 +7,10 @@
       i18n:domain="plone">
 <body>
     
-    <section class="slide aligncenter">
+    <section class="slide text aligncenter">
         <div class="wrap">
             <div class="content-center">
-                div tal:replace="structure view/body/output" />
+                <div tal:replace="structure view/body/output" />
             </div>
         </div>
     </section>

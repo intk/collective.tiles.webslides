@@ -7,7 +7,7 @@
       i18n:domain="plone">
 <body>
 
-<section tal:define="alignment view/alignment|nothing; id view/tile_id; alignment_class python: 'alignright' if alignment in ['Right'] else 'alignleft'" class="slide">
+<section tal:define="alignment view/alignment|nothing; id view/tile_id; alignment_class python: 'alignright' if alignment in ['Right'] else 'alignleft'" class="slide side-text">
     
     <div class="wrap">
         <div class="image-wrapper ${alignment_class} size-50">

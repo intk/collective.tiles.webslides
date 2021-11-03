@@ -58,10 +58,6 @@
 webslides.js will add .ws-ready automatically. Don't worry :) -- */
 
 body.template-layout.subsection-google-ad-grants {
-
-  #top-header-wrapper {
-    display: none;
-  }
   
   height: 100%;
   overflow: hidden;
@@ -187,8 +183,8 @@ body.template-layout.subsection-google-ad-grants .website-wrapper {
   img.aligncenter,
   figure.aligncenter,
   div.alignright {
-    margin-bottom: 3.2rem;
-    margin-top: 3.2rem; }
+    margin-bottom: 1.2rem;
+    margin-top: 1.2rem; }
 
   img.alignright,
   svg.alignright,
@@ -1008,7 +1004,7 @@ body.template-layout.subsection-google-ad-grants .website-wrapper {
   =========================================== */
   /* -- If you want an unique, global header/footer,read this:
   https://github.com/webslides/webslides/issues/57 -- */
-  header,
+  header:not(#content-header),
   footer,
   #navigation {
     padding: 2.4rem;
@@ -1373,7 +1369,8 @@ body.template-layout.subsection-google-ad-grants .website-wrapper {
     padding: .8rem;
     position: absolute;
     text-align: center;
-    width: 4rem; }
+    width: 4rem;
+  line-height: 1; }
 
   a#next {
     right: 3.2rem; }
@@ -2815,10 +2812,10 @@ body.template-layout.subsection-google-ad-grants .website-wrapper {
   .bg-white a,
   .bg-light a,
   .bg-gradient-white a {
-    color: #44d; }
+    color: #242424; }
 
   a:hover {
-    color: #3af; }
+    color: #242424; }
 
   .flexblock li > a,
   [class*='bg-'] li > a,
@@ -3491,10 +3488,10 @@ body.template-layout.subsection-google-ad-grants .website-wrapper {
   ============================== */
   #counter,
   #navigation a {
-    color: #abc; }
+    color: #242424; }
 
   #webslides:hover #navigation a:hover {
-    background-color: rgba(0, 10, 40, 0.8);
+    background-color:#242424;
     color: #fff; }
 
   /*============================
